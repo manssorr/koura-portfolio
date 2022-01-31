@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #ac701c
+}
+
 #profpic {
   width: 350px;
   border-radius: 50%;
@@ -44,3 +48,4 @@
 .portfolio-item:hover .middle {
   opacity: 1;
 }
+
