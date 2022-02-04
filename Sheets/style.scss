@@ -62,8 +62,6 @@ $dark-color: #33332d;
 	color: $light-color;
 	background: $dark-color;
 	transition: 0.3s ease;
-
-	
 }
 
 .shadow-item:hover {
@@ -92,4 +90,19 @@ nav-el {
 	color: $light-color !important; 
     background: $dark-color;
 	transition: 0;
+}
+
+.btn-bw-gh {
+	border: 1px solid $dark-color;
+	text-decoration: none;
+	color: $dark-color;
+	box-shadow: 5px 4px 0px 0px $dark-color;
+	-webkit-box-shadow: 5px 4px 0px 0px $dark-color;
+	-moz-box-shadow: 5px 4px 0px 0px $dark-color;
+}
+
+.btn-bw-gh:hover {
+	color: $light-color;
+	background: $dark-color;
+	transition: 0.3s ease;
 }
