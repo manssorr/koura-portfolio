@@ -16,15 +16,14 @@
     </script>
 </head>
 
-<body>
-
+<body class="read-color">
     <!-- Start NavBar-->
-    <nav class="navbar navbar-light bg-light fixed-top shadow-sm  ">
+    <!-- <nav class="navbar navbar-light bg-light fixed-top shadow-sm  ">
         <div class="container-lg">
             <a class="navbar-brand text-danger fw-bold fs-4" href="#"> <img height="90"
                     src="./images/Koura-logo-black.png"> </a>
             <div class="dropdown">
-                <button class="btn btn-secondary btn-danger px-3 " type="button" id="dropdownMenuButton1"
+                <button class="btn btn-secondary btn-dark px-3 " type="button" id="dropdownMenuButton1"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -34,7 +33,37 @@
                     <li><a class="dropdown-item" href="#services">Services</a></li>
                     <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
                     <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
 
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container d-flex">
+            <a class="navbar-brand" href="#">
+                <strong class="logo-el">&#60;Koura /></strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active nav-el py-0" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-el py-0" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-el py-0" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-el py-0" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-el py-0" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -46,9 +75,10 @@
         <div class="container-lg">
             <div class="row  min-vh-100 align-items-center align-content-center">
                 <div class="col-md-6 mt-5 mt-md-0">
-                    <div class="home-img">
-                        <img style="width: 400px;" class="rounded-circle mw-100" src="./images/mansour.jpeg"
-                            alt="Profile image">
+                    <div class="home-img text-center">
+                        <img style="width: 400px;"
+                            class="border border-dark border-5 shadow-item  rounded-circle mw-100"
+                            src="./images/mansour.jpeg" alt="Profile image">
                     </div>
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0 order-md-first">
@@ -56,10 +86,11 @@
                         <p class="text-muted mb-1">Hello I'm</p>
                         <h1 class="text-danger text-uppercase fs-1 fw-bold">Web Developer</h1>
                         <h2 class="fs-4">Mansour Koura</h2>
-                        <p class="mt-4 text-muted">
+                        <p class="mt-4 mb-4 text-muted">
                             I am a talented Front end Developer From Egypt.
                         </p>
-                        <a class="btn btn-danger px-3 mt-3" href="#portfolio">My Work</a>
+                        <a class="btn-bw " href="#portfolio">My Work</a>
+                        <a class="btn-bw" href="#portfolio">My Work</a>
                     </div>
                 </div>
             </div>
@@ -69,7 +100,7 @@
 
     <!-- About Section Start -->
     <section class="about  py-5" id="about">
-        <div class="container-lg py-4">
+        <div class="container-lg my-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 ">
                     <div class="section-title text-center">
@@ -97,7 +128,7 @@
                         <div class="col-sm-4">
                             <div class="fact-item">
                                 <h4 class="fs-1 fw-bold">2</h4>
-                                <p class="text-muted">Happy clients</p>
+                                <p class="text-muted">Hapmy clients</p>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -107,23 +138,41 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12 d-flex align-items-center">
-                            <a href="./files/mansour-cv.pdf" target="_blank" class="btn btn-danger me-2 px-2">Download
-                                CV</a>
-                            <a href="https://manssorr.notion.site/Mansour-s-Resume-b04bc5e492c64a479b9fc94a07b7b1ec"
-                                target="_blank" class="btn btn-secondary me-5 px-2">Online CV</a>
-                            <div class="social-links ">
-                                <a href="https://github.com/manssorr/" target="_blank" class="text-dark  me-2 "><i
-                                        class="fab fa-github fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/manssorr/" target="_blank" class="text-dark  me-2"><i
-                                        class="fab fa-linkedin-in fa-2x"></i></a>
-                                <a href="https://twitter.com/KouraCoding" target="_blank" class="text-dark  me-2"><i
-                                        class="fab fa-twitter fa-2x"></i></a>
-                                <a href="https://t.me/Man_ssorr" target="_blank" class="text-dark  me-2"><i
-                                        class="fab fa-telegram fa-2x"></i></a>
+
+                    <div class="row row-cols-sm-1  row-cols-lg-2 mx-auto text-center">
+
+                        <div class="col mb-4">
+
+                            <div class="row">
+                                <a href="./files/mansour-cv.pdf" target="_blank" class="col btn-bw me-2 px-2">
+                                    Download CV
+                                </a>
+                                <a href="https://manssorr.notion.site/Mansour-s-Resume-b04bc5e492c64a479b9fc94a07b7b1ec"
+                                    target="_blank" class="col btn-bw me-2 px-2">
+                                    Online CV
+                                </a>
                             </div>
+
                         </div>
+
+                        <div class="col social-links ">
+                            <a href="https://github.com/manssorr/" target="_blank" class="text-dark  me-2 ">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/manssorr/" target="_blank" class="text-dark  me-2">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </a>
+
+                            <a href="https://twitter.com/KouraCoding" target="_blank" class="text-dark  me-2">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+
+                            <a href="https://t.me/Man_ssorr" target="_blank" class="text-dark  me-2">
+                                <i class="fab fa-telegram fa-2x"></i>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0">
@@ -177,8 +226,8 @@
     <!-- About Section End -->
 
     <!-- Serivces Section Start -->
-    <section class="services  py-5" id="services">
-        <div class="container-lg py-4">
+    <section class="services" id="services">
+        <div class="container-lg">
             <div class="row justify-content-center">
                 <div class="col-lg-8 ">
                     <div class="section-title text-center">
@@ -188,29 +237,29 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                    <div class="service-item shadow-item  py-4 bg-white border border-dark">
                         <div class="icon my-3 text-danger fs-2">
                             <i class="fas fa-code"></i>
                         </div>
-                        <h3 class="fs-5 py-2">Web Development</h3>
-                        <p class="text-muted"></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 ">
-                    <div class="service-item shadow-sm p-4 rounded bg-white">
-                        <div class="icon my-3 text-danger fs-2">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h3 class="fs-5 py-2">Creative Design</h3>
+                        <h3 class="fs-5 my-2">Web Development</h3>
                         <p class="text-muted"></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                    <div class="service-item shadow-item  py-4 bg-white border border-dark">
+                        <div class="icon my-3 text-danger fs-2">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="fs-5 my-2">Creative Design</h3>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-item  py-4 bg-white border border-dark">
                         <div class="icon my-3 text-danger fs-2">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <h3 class="fs-5 py-2">Mobile Responsive</h3>
+                        <h3 class="fs-5 my-2">Mobile Responsive</h3>
                         <p class="text-muted"></p>
                     </div>
                 </div>
@@ -220,9 +269,8 @@
     <!-- Serivces Section End -->
 
     <!-- Portfolio Section Start -->
-
     <section class="portfolio  py-5" id="portfolio">
-        <div class="container-lg py-4">
+        <div class="container-lg my-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 ">
                     <div class="section-title text-center">
@@ -235,110 +283,108 @@
 
                 <div class="col-md-6 mb-3 col-lg-4">
                     <div class="portfolio-item">
-                        <img style="height: 250px; object-fit: cover;" class="w-100 img-thumbnail project-img"
+                        <img style="height: 250px; object-fit: cover;"
+                            class="w-100 shadow-item border border-dark border-2 project-img"
                             src="projects/todo-app.jpg" alt="portfolio image">
                         <h3 class="text-capitalize fs-5 my-2">
                             Todo App
                         </h3>
                         <div class="mb-4 middle">
-                            <a class="btn btn-danger" href="https://todos-app-mans.surge.sh/" target="_blank"
-                                role="button">Live
-                                Demo</a>
-                            <a class="btn btn-outline-dark" href="#" role="button">Github</a>
+                            <a class="btn-bw" href="https://todos-app-mans.surge.sh/" target="_blank">Live Demo</a>
+                            <a class="btn-bw" href="#"><i class="fab fa-github fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3 col-lg-4">
                     <div class="portfolio-item">
-                        <img style="height: 250px; object-fit: cover;" class="w-100 img-thumbnail project-img"
+                        <img style="height: 250px; object-fit: cover;"
+                            class="shadow-item w-100 shadow-item border border-dark border-2 project-img"
                             src="projects/notes-app.jpg" alt="portfolio image">
                         <h3 class="text-capitalize fs-5 my-2">
                             Notes App
                         </h3>
                         <div class="mb-4 middle">
-                            <a class="btn btn-danger" href="https://notes-app-mans.surge.sh/" target="_blank"
-                                role="button">Live
-                                Demo</a>
-                            <a class="btn btn-outline-dark" href="#" role="button">Github</a>
+                            <a class="btn-bw" href="https://notes-app-mans.surge.sh/" target="_blank">Live Demo</a>
+                            <a class="btn-bw" href="#"><i class="fab fa-github fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3 col-lg-4">
                     <div class="portfolio-item">
-                        <img style="height: 250px; object-fit: cover;" class="w-100 img-thumbnail project-img"
+                        <img style="height: 250px; object-fit: cover;"
+                            class="w-100 shadow-item border border-dark border-2 project-img"
                             src="projects/KoNotes-app.jpg" alt="portfolio image">
                         <h3 class="text-capitalize fs-5 my-2">
                             KoNotes App
                         </h3>
                         <div class="mb-4 middle">
-                            <a class="btn btn-danger" href="https://dnqpxhgxblgj7.cloudfront.net/" target="_blank"
-                                role="button">Live
-                                Demo</a>
-                            <a class="btn btn-outline-dark" href="#" role="button">Github</a>
+                            <a class="btn-bw" href="https://dnqpxhgxblgj7.cloudfront.net/" target="_blank">Live Demo</a>
+                            <a class="btn-bw" href="#"><i class="fab fa-github fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3 col-lg-4">
                     <div class="portfolio-item">
-                        <img style="height: 250px; object-fit: cover;" class="w-100 img-thumbnail project-img"
+                        <img style="height: 250px; object-fit: cover;"
+                            class="w-100 shadow-item border border-dark border-2 project-img"
                             src="projects/indecision-app.jpg" alt="portfolio image">
                         <h3 class="text-capitalize fs-5 my-2">
                             Indecision App
                         </h3>
                         <div class="mb-4 middle">
-                            <a class="btn btn-danger" href="https://indecision-app-mans.surge.sh/" target="_blank"
-                                role="button">Live
-                                Demo</a>
-                            <a class="btn btn-outline-dark" href="#" role="button">Github</a>
+                            <a class="btn-bw" href="https://indecision-app-mans.surge.sh/" target="_blank">Live Demo</a>
+                            <a class="btn-bw" href="#"><i class="fab fa-github fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3 col-lg-4">
                     <div class="portfolio-item">
-                        <img style="height: 250px; object-fit: cover;" class="w-100 img-thumbnail project-img"
+                        <img style="height: 250px; object-fit: cover;"
+                            class="w-100 shadow-item border border-dark border-2 project-img"
                             src="projects/hangman-game.jpg" alt="portfolio image">
                         <h3 class="text-capitalize fs-5 my-2">
                             Hangman Game
                         </h3>
-                        <div class="mb-4 middle">
-                            <a class="btn btn-danger" href="https://hangman-game-mans.surge.sh/" role="button">Live
-                                Demo</a>
-                            <a class="btn btn-outline-dark" href="https://hangman-game-mans.surge.sh/" target="_blank"
-                                role="button">Github</a>
+                        <div class="mb-4 middle"> Demo</a>
+                            <a class="btn-bw" href="https://hangman-game-mans.surge.sh/" target="_blank"><i
+                                    class="fab fa-github fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3 col-lg-4">
                     <div class="portfolio-item">
-                        <img style="height: 250px; object-fit: cover;" class="w-100 img-thumbnail project-img"
+                        <img style="height: 250px; object-fit: cover;"
+                            class="w-100 shadow-item border border-dark border-2 project-img"
                             src="projects/expensify-app.jpg" alt="portfolio image">
                         <h3 class="text-capitalize fs-5 my-2">
                             Expensify App
                         </h3>
                         <div class="mb-4 middle">
-                            <a class="btn btn-danger" href="https://expensify-app-mans.herokuapp.com/" target="_blank"
-                                role="button">Live Demo</a>
-                            <a class="btn btn-outline-dark" href="#" role="button">Github</a>
+                            <a class="btn-bw mb-4" href="https://expensify-app-mans.herokuapp.com/" target="_blank">Live
+                                Demo</a>
+                            <a class="btn-bw" href="#"><i class="fab fa-github fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3 col-lg-4">
                     <div class="portfolio-item">
-                        <img style="height: 250px; object-fit: cover;" class="w-100 img-thumbnail project-img"
+                        <img style="height: 250px; object-fit: cover;"
+                            class="w-100 shadow-item border border-dark border-2 project-img"
                             src="projects/chatroom-app.jpg" alt="portfolio image">
                         <h3 class="text-capitalize fs-5 my-2">
                             Chatroom App
                         </h3>
                         <div class="mb-4 middle">
-                            <a class="btn btn-danger" href="https://mans-node-chat-app.herokuapp.com/" target="_blank"
-                                role="button">Live Demo</a>
-                            <a class="btn btn-outline-dark" href="#" role="button">Github</a>
+                            <a class="btn-bw" href="https://mans-node-chat-app.herokuapp.com/" target="_blank">Live
+                                Demo</a>
+                            <a class="btn-bw" href="#">
+                                <i class="fab fa-github fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
@@ -351,13 +397,12 @@
 
     <!-- Freelancer Available Section Start -->
     <section class="freelance-availbe py-5 bg-danger">
-        <div class="container-lg py-4">
+        <div class="container-lg my-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <p class="text-light fs-5">Do you have any project</p>
                     <h2 class="fs-1 text-white mb-4">I'm Available For Freelance Projects</h2>
-                    <a href="https://www.linkedin.com/in/manssorr/" target="_blank" class="btn btn-outline-light">Hire
-                        Me</a>
+                    <a href="https://www.linkedin.com/in/manssorr/" target="_blank" class="btn-bw">Hire Me</a>
                 </div>
             </div>
         </div>
@@ -366,7 +411,7 @@
 
     <!-- contact section start -->
     <section class="contact py-5" id="contact">
-        <div class="container-lg py-4">
+        <div class="container-lg my-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 ">
                     <div class="section-title text-center">
@@ -375,8 +420,8 @@
                 </div>
             </div>
 
-            <div class="row text-center">
-                <div class=" mb-4 bg-body rounded">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3  mx-auto text-center">
+                <div class="mb-4">
                     <div class="icon fs-4 text-danger">
                         <i class="fas fa-envelope"></i>
                     </div>
@@ -385,7 +430,7 @@
                         <p class="text-muted ">mansourashraf173@gmail.com</p>
                     </div>
                 </div>
-                <div class="  mb-4 bg-body rounded">
+                <div class="mb-4">
                     <div class="icon fs-4 text-danger">
                         <i class="fas fa-phone"></i>
                     </div>
@@ -394,7 +439,7 @@
                         <p class="text-muted ">+20102529526</p>
                     </div>
                 </div>
-                <div class=" mb-4 bg-body rounded">
+                <div class="mb-4">
                     <div class="icon fs-4 text-danger">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
@@ -409,17 +454,17 @@
     <!-- contact section end -->
 
     <!-- Footer Start -->
-    <footer class="footer border-top py-4 The Website">
+    <footer class="footer border-top py-4">
         <div class="container-lg">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <p class=" m-0 text-muted text-center">&copy; 2022 The Website</p>
+                    <p class=" m-0 text-muted text-center">
+                        &comy; 2022 Mansour Koura</p>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer End -->
-
 
 </body>
 
